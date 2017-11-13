@@ -23,7 +23,7 @@
                 case 'a': out.print(n1+n2);break;
                 case 's': out.print(n1-n2);break;
                 case 'm': out.print(n1*n2);break;
-                default:out.print("wtf");
+                default:out.print("none");
                 
             }
             
