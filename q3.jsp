@@ -25,12 +25,12 @@
             }
             if(!(dob.equals("04/01/1997")))
             {
-                out.print("dob wrong");
+                out.print("Wrong Date of Birth");
                  k=false;
             }
             if(!(em.equals("prinxe.gupta@gmail.com")))
             {
-                out.print("em wrong");
+                out.print("Email wrong");
                  k=false;
             }
             if(k)out.write("validated");
