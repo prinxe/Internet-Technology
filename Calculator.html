@@ -1,0 +1,17 @@
+<html>
+<head>
+<script>
+	function calculate(){
+		var i = eval(document.forms[0].elements[0].value);
+		alert("The answer is: " + i);	
+	}
+</script>
+</head>	
+<body>
+	<form>
+	<INPUT TYPE="Text" NAME="SUM"/>
+	<INPUT TYPE="Button" onClick="calculate();" NAME="cal" Value="Calculate" />
+	<INPUT TYPE="Text" onFocus="this.blur();" NAME="abc" />
+	</form>
+</body>
+</html>

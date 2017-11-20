@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function checkL(){
+	var x = document.forms["myForm"]["roll"].value;
+	x = x.toString().length;
+	if(x != 1) alert("Invalid Roll No.");
+	else alert("Valid Roll No.");
+
+	var st = document.forms["myForm"]["name"].value;
+	var length = st.length;
+	alert(typeof st.charAt(i));
+	for(i = 0; i<length; i++){
+		if (type == "number"){
+			alert("Invalid Name");
+		}
+	}
+}
+</script>
+</head>
+
+<body>
+<form method="post" name="myForm" onsubmit="checkL()">
+Roll No.: <input type="text" name="roll"> <br>
+Name: <input type="text" name="name"> <br>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>

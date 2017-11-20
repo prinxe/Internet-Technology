@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+	function verifyData(){
+		a=0; r="";
+		for(i=0; i<=4; i++){
+			if(document.forms[0].elements[i].value == ""){
+				a=1;		
+				r = r + " " + document.forms[0].elements[i].name + ",";
+				}
+			else if((i>3) && (a==0)){
+				alert("All fields filled");
+				document.forms[0].elements[2].select();
+			}
+		}
+		for(i=0; i<4; i++){
+			if(document.forms[0].elements[i].value == ""){
+				alert("Please fill the following fields: " + r);
+				document.forms[0].elements[i].focus();
+				break;
+			}
+		}
+	}
+</script>
+</head>
+<body>
+	<form>
+	Name:      <INPUT TYPE="Text" NAME="Name" DefaultValue="Fuck You"><br/>
+	Address:   <InPUT TYPE="Text" NAME="Address"><br/>
+	Phone No.: <INPUT TYPE="Text" NAME="Phone"><br/>
+	PIN: <INPUT TYPE="Text" NAME="Pin"><br/>
+	<INPUT NAME="verButton" TYPE="Button" onClick="verifyData()" VALUE="Verify">
+	</form>
+</body>
+</html>
